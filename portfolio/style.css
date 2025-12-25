@@ -1,0 +1,133 @@
+:root {
+    --primary: #4f46e5;
+    --dark: #0f172a;
+    --light: #f8fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--light);
+    color: #1e293b;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: var(--dark);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons a {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: var(--primary);
+    color: white;
+}
+
+.hero-buttons .secondary {
+    background: transparent;
+    border: 1px solid white;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list span {
+    background: #e0e7ff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Projects */
+.project-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--primary);
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* Contact */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark);
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
